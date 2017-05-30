@@ -9,6 +9,7 @@ body {
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 1em;
 	float: left;
+	box-sizing: border-box;
 	/*Для задания*/
 }
 span { 
@@ -22,11 +23,10 @@ span {
 	background: #212121; /*Цвет текста MD_Grey900*/
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
+	align-items: flex-end;
 	flex-wrap: wrap;
 }
 .header_logo {
-	margin: 1 0 1 1; /*от верхнего, правого, нижнего и левого края.*/
 	width: 230px;
 	float: left;
 	padding: 5px;
@@ -38,7 +38,10 @@ span {
 	text-decoration: none;
 }
 .header_menu {
+	width: 500px;
 	padding: 5px;
+	position: absolute;
+	right: 0;
 }
 .header_menu_links {
 	float: left;
@@ -87,6 +90,7 @@ input, textarea {text-transform: capitalize;}
 /*Прижать текст “Все права защищены” к правому краю и отодвинуть от верхней и правой границы.*/
 .footer_all-rights-reserved {
 	float: right;
+
 }
 
 body {
