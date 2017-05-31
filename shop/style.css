@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Barrio|Ubuntu&subset=cyrillic,cyrillic-ext');
+* a {
+	text-decoration: none;
+}
 body {
 	width: 100%;
 	height: 100%;
@@ -68,6 +71,28 @@ span {
 	background: #E0E0E0; /*Цвет текста MD_Grey300*/
 	/*Для задания*/
 }
+.content_product {
+	display: flex;
+	flex-direction: row;
+}
+.button {
+	margin: 10px 0px 20px 0px;
+	display: inline-block;
+	padding: 5px;
+	border: 2px	inset #FFD54F;
+	background: #212121;
+	color: #FF8F00; /*Цвет текста MD_Amber900*/
+	font-size: 2em;
+}
+.button a {
+	color: #FFD54F; /*Цвет текста MD_Amber300*/
+}
+.button:hover {
+	background: #424242; /*Цвет текста MD_Grey800*/
+}
+.button:active {
+	background: #FF8F00; /*Цвет текста MD_Amber800*/
+}
 
 .footer {
 	width: 78%;
@@ -96,4 +121,10 @@ input, textarea {text-transform: capitalize;}
 body {
 	display: flex;
 	flex-direction: column;
+}
+.content_short-desk {
+	float: right;
+}
+.footer_back {
+	font-size: 1em;
 }
